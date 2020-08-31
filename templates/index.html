@@ -1,0 +1,32 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    
+    <title>Document</title>
+
+  </head>
+  <body>
+    <div >
+      <table >
+        
+          <tr>
+            <th>name</th>
+            <th>Course</th>
+            <th>price</th>
+          </tr>
+        
+          {% for data in datass %}
+          <tr>
+            <th>{{data.name}}</th>
+            <th>{{data.course}}</th>
+            <th>{{data.price}}</th>
+          </tr>
+          {% endfor %}
+        
+      </table>
+    </div>
+  </body>
+</html>
